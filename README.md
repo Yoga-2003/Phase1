@@ -159,61 +159,61 @@ Now for the Slack you need to choose the chatbot you created for it from the das
 2.	From the Integrations section, click Add integration.
 3.	Click Slack.
 
-4.	![](Images/7.png)
+	![](Images/7.png)
 
-5.	You need to have a Slack app to connect to.
+4.	You need to have a Slack app to connect to.
 If you don’t have a Slack app, create one now. See Starting with Slack apps.
-6.	Go to the Your Apps page on the Slack website, and then click the app you want to use.
+5.	Go to the Your Apps page on the Slack website, and then click the app you want to use.
 Open the Slack app in a new browser tab, so you can easily switch back and forth between the Slack app settings page and Watson Assistant Slack integration configuration page.
 
-7. ![](Images/8.png)
+ ![](Images/8.png)
 
-8.	From the settings page for your Slack app, open the App Home page.
-9.	Add access scopes for your Slack app.
+7.	From the settings page for your Slack app, open the App Home page.
+8.	Add access scopes for your Slack app.
 The button label might be Review Scopes to Add or Update scopes depending on whether you are creating a new app or editing an app that you created before February 2020.
 The method for Slack access changed. For more information about it, read the Slack blog post about it.
 
-10. ![](Images/10.png)
+9. ![](Images/10.png)
 
-11.	Assign bot token scopes to your Slack app. At a minimum, apply the following scopes:
+10.	Assign bot token scopes to your Slack app. At a minimum, apply the following scopes:
 •	app_mentions:read
 •	chat:write
 •	im:history
 •	im:read
 •	im:write
 
-12. ![](Images/11.png)
+11. ![](Images/11.png)
 
-13.	Click Install App to Workspace, and then allow the installation when prompted.
+12.	Click Install App to Workspace, and then allow the installation when prompted.
 If you are editing scopes for an existing application, reinstall it.
-14.	From the Slack settings App Home page, enable the Always Show My Bot As Online setting.
-15.	Go to the OAuth and Permissions page in Slack, copy the Bot User OAuth Access Token.
-16.	From the Watson Assistant Slack integration configuration page, paste the token that you copied in the previous step into both the OAuth access token and Bot user OAuth access token fields.
-17.	On the Slack app settings page, go to the Basic Information page, and then find the App Credentials section. Copy the app credential verification token.
-18.	From the Watson Assistant Slack integration configuration page, paste the verification token that you copied in the previous step into the Verification token field.
-19.	Click Generate request URL, and then copy the generated request URL.
+13.	From the Slack settings App Home page, enable the Always Show My Bot As Online setting.
+14.	Go to the OAuth and Permissions page in Slack, copy the Bot User OAuth Access Token.
+15.	From the Watson Assistant Slack integration configuration page, paste the token that you copied in the previous step into both the OAuth access token and Bot user OAuth access token fields.
+16.	On the Slack app settings page, go to the Basic Information page, and then find the App Credentials section. Copy the app credential verification token.
+17.	From the Watson Assistant Slack integration configuration page, paste the verification token that you copied in the previous step into the Verification token field.
+18.	Click Generate request URL, and then copy the generated request URL.
 
-20.	![](Images/9.png)
+	![](Images/9.png)
 
-21.	Return to the Slack app settings page. Open the Event Subscriptions page, and then turn on Enable Events. Paste the request URL that you copied in the previous step into the field.
-22.	On the Event Subscriptions page in Slack, find the Subscribe to Bot Events section. Click Add Bot User Event, and then select the event types you want to subscribe to. You must select at least one of the following types:
+19.	Return to the Slack app settings page. Open the Event Subscriptions page, and then turn on Enable Events. Paste the request URL that you copied in the previous step into the field.
+20.	On the Event Subscriptions page in Slack, find the Subscribe to Bot Events section. Click Add Bot User Event, and then select the event types you want to subscribe to. You must select at least one of the following types:
 •	message.im: Listens for message events that are posted in a direct message channel.
 •	app_mention: Listens for only message events that mention your app or bot.
 
-23. ![](Images/12.png)
+21. ![](Images/12.png)
 
 Choose the app_mention entry in normal font, not the app_mention entry that is in bold font.
-24.	Click Save Changes.
+22.	Click Save Changes.
 
-25.	![](Images/13.png)
+23.	![](Images/13.png)
 
-26.	Optional: To add support for showing buttons, menus, and disambiguation options in the Slack app, go to the Interactive Components tab and enable the feature. Paste your request URL in the provided text entry field, and then click Enable Interactive Components.
+24.	Optional: To add support for showing buttons, menus, and disambiguation options in the Slack app, go to the Interactive Components tab and enable the feature. Paste your request URL in the provided text entry field, and then click Enable Interactive Components.
 
-27.	![](Images/14.png)
+	![](Images/14.png)
 
-28.	![](Images/15.png)
+ ![](Images/15.png)
 
-29.	![](Images/16.png)
+ ![](Images/16.png)
 
 Chatting with the assistant
 To start a chat with the assistant, complete the following steps:
